@@ -1,0 +1,125 @@
+{
+  "$schema": "http://json.schemastore.org/install",
+  "resources": {
+    "body": [
+      {
+        "type": "script",
+        "src": "./dist/bundle.js"
+      }
+    ]
+  },
+  "preview": {
+    "handlers": [
+      {
+        "options": [
+          "_default"
+        ],
+        "execute": "INSTALL_SCOPE.setOptions(INSTALL_OPTIONS)"
+      }
+    ]
+  },
+  "options": {
+    "properties": {
+      "location": {
+        "title": "ChangeNow element Location",
+        "description": "Where should the ChangeNow button or widget appear?",
+        "order": 0,
+        "type": "object",
+        "format": "element",
+        "default": {
+          "selector": "body",
+          "method": "prepend"
+        }
+      },
+      "defaultfrom": {
+        "order": 1,
+        "title": "Default From Token",
+        "description": "Select which token is the default to swap from",
+        "type": "string",
+        "default": "BTC"
+      },
+      "defaultto": {
+        "order": 2,
+        "title": "Default From Token",
+        "description": "Select which token is the default to swap to",
+        "type": "string",
+        "default": "ETH"
+      },
+      "faq": {
+        "order": 3,
+        "title": "FAQ",
+        "description": "Show/Hide FAQ on ChangeNow widget",
+        "type": "boolean",
+        "default": true
+      },
+      "amount": {
+        "order": 4,
+        "title": "Default amount",
+        "description": "The default amount to be shown as placeholder",
+        "type": "number",
+        "default": 0.01
+      },
+      "logo": {
+        "order": 5,
+        "title": "ChangeNow Logo",
+        "description": "Show/Hide ChangeNow logo on widget",
+        "type": "boolean",
+        "default": true
+      },
+      "isbutton": {
+        "order": 5,
+        "title": "Widget or Button",
+        "description": "Show ChangeNow widget or button on site",
+        "type": "boolean",
+        "default": true
+      },
+      "language": {
+        "order": 6,
+        "title": "Language select control",
+        "description": "Show/Hide ChangeNow language select control on widget",
+        "type": "boolean",
+        "default": true
+      },
+      "defaultlanguage": {
+        "order": 7,
+        "title": "Default Language",
+        "format": "radios",
+        "type": "string",
+        "default": "english",
+        "enum": [
+          "english",
+          "russian",
+          "korean",
+          "portoguese"
+        ],
+        "enumNames": {
+          "english": "English",
+          "russian": "Русский",
+          "korean":"한국어",
+          "portoguese":"Português"
+        }
+      },
+      "theme": {
+        "order": 8,
+        "title": "Theme",
+        "format": "radios",
+        "type": "string",
+        "default": "original",
+        "enum": [
+          "light",
+          "dark"
+        ],
+        "enumNames": {
+          "light": "Light",
+          "dark": "Dark"
+        }
+      },
+      "affiliate": {
+        "order": 9,
+        "title": "Your ChangeNow Affiliate link",
+        "description": "Enter your ChangeNow affiliate link here",
+        "type": "string"
+      }
+    }
+  }
+}

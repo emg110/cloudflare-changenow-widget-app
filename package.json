@@ -1,0 +1,62 @@
+{
+  "name": "cloudflare-changenow-btn-app",
+  "version": "1.0.1",
+  "description": "This CloudFlare APP integrates ChangeNow instant & secure crypto exchange widget & button to CloudFlare hosted sites",
+  "private": false,
+  "scripts": {
+    "start": "set NODE_ENV=development && webpack --watch",
+    "build": "set NODE_ENV=production && webpack",
+    "lint": "standard --fix ./source/**/*.js || true"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emg110/cloudflare-changenow-btn-app.git"
+  },
+  "author": "M.Ghiasi [emg110@gmail.com]",
+  "contributors": [
+    {
+      "name": "M.Ghiasi",
+      "email": "emg110@gmail.com"
+    },
+    {
+      "name": "Sheghzo",
+      "email": "shm1358110@gmail.com"
+    }
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/emg110/cloudflare-changenow-btn-app/issues"
+  },
+  "homepage": "https://github.com/emg110/cloudflare-changenow-btn-app#readme",
+  "devDependencies": {
+    "@babel/core": "^7.13.16",
+    "@babel/eslint-parser": "^7.13.14",
+    "@babel/preset-env": "^7.13.15",
+    "@babel/preset-react": "^7.13.13",
+    "autoprefixer": "^10.2.5",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^5.2.4",
+    "extract-loader": "^5.1.0",
+    "file-loader": "^6.2.0",
+    "node-sass": "^4.13.1",
+    "postcss-loader": "^5.2.0",
+    "sass": "^1.32.11",
+    "sass-loader": "^8.0.2",
+    "standard": "^16.0.3",
+    "standard-format-loader": "^1.1.2",
+    "standard-loader": "^7.0.0",
+    "style-loader": "^2.0.0",
+    "svg-inline-loader": "^0.8.2",
+    "webpack": "^5.35.0",
+    "webpack-cli": "^4.6.0"
+  },
+  "standard": {
+    "parser": "@babel/eslint-parser",
+    "globals": [
+      "INSTALL",
+      "INSTALL_OPTIONS",
+      "INSTALL_SCOPE",
+      "INSTALL_ID"
+    ]
+  }
+}
