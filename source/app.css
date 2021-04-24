@@ -3,6 +3,16 @@ cloudflare-app[app="cloudflare-changenow-btn-app"] {
   display: inline-block;
   font-size: 16px;
 }
+.dark a {
+  
+  color: #d1e875 !important;
+ 
+}
+.dark {
+  
+  background-color: #2b2b37 !important;
+ 
+}
 
 cloudflare-app[app="cloudflare-changenow-btn-app"] .logo-container {
   display: block;

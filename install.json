@@ -67,21 +67,21 @@
         "default": true
       },
       "isbutton": {
-        "order": 5,
-        "title": "Widget or Button",
-        "description": "Show ChangeNow widget or button on site",
+        "order": 6,
+        "title": "Show button",
+        "description": "Show ChangeNow button instead of widget on site",
         "type": "boolean",
-        "default": true
+        "default": false
       },
       "language": {
-        "order": 6,
+        "order": 7,
         "title": "Language select control",
         "description": "Show/Hide ChangeNow language select control on widget",
         "type": "boolean",
         "default": true
       },
       "defaultlanguage": {
-        "order": 7,
+        "order": 8,
         "title": "Default Language",
         "format": "radios",
         "type": "string",
@@ -100,7 +100,7 @@
         }
       },
       "theme": {
-        "order": 8,
+        "order": 9,
         "title": "Theme",
         "format": "radios",
         "type": "string",
@@ -115,7 +115,7 @@
         }
       },
       "affiliate": {
-        "order": 9,
+        "order": 10,
         "title": "Your ChangeNow Affiliate link",
         "description": "Enter your ChangeNow affiliate link here",
         "type": "string"

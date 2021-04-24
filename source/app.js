@@ -60,17 +60,17 @@ const svgLight = `<svg width="263px" height="42px" viewBox="0 0 263 42" version=
     let locale = 'en-US'
     switch (defaultlanguage) {
       case 'russian':
-        local = 'ru-RU'
+        locale = 'ru-RU'
         break;
       case 'korean':
-        local = 'ko-KR'
+        locale = 'ko-KR'
         break;
       case 'portoguese':
-        local = 'pt-PT'
+        locale = 'pt-PT'
         break;
 
       default:
-        local = 'en-US'
+        locale = 'en-US'
         break;
     }
     const theme = options.theme;
@@ -83,7 +83,8 @@ const svgLight = `<svg width="263px" height="42px" viewBox="0 0 263 42" version=
       }
     }
     const logoContainer = document.createElement("a")
-    const imgContainer = document.createElement("div")
+    const imgContainer = document.createElement("div");
+    
     const widgetContainer = document.createElement("div")
     logoContainer.className = "logo-container"
     logoContainer.href = `"https://changenow.io/exchange?amount=${amount}&from=${defaultfrom.toLowerCase()}&to=${defaultto.toLowerCase()}&link_id=${affiliate}"`
@@ -94,9 +95,11 @@ const svgLight = `<svg width="263px" height="42px" viewBox="0 0 263 42" version=
    
     const widgetHtmlString = `<iframe id='iframe-widget' src='https://changenow.io/embeds/exchange-widget/v2/widget.html?amount=${amount}&from=${defaultfrom.toLowerCase()}&link_id=${affiliate}&to=${defaultto.toLowerCase()}&FAQ=${faq}&logo=${isLogo}&locales=${language}&lang=${locale}' width='100%' height='350px' frameborder='0'></iframe>
     <script type='text/javascript' src='https://changenow.io/embeds/exchange-widget/v2/stepper-connector.js'></script>`
-    imgContainer.style = `padding: 5px; margin: 5px;`;
+    imgContainer.style = `padding: 5px; margin: 5px;width:263px; height:42px`;
     imgContainer.innerHTML = theme === 'dark' ? svgDark : svgLight;
+    
     widgetContainer.innerHTML = widgetHtmlString;
+    widgetContainer.className = theme === 'dark' ? "dark" : "";
     logoContainer.appendChild(imgContainer);
     if(isButton){
       element.appendChild(logoContainer);
