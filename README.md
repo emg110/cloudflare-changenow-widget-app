@@ -1,4 +1,4 @@
-![changenow-logo](./media/changenow-logo.png)
+![logo-on-white](./media/logo-on-white.svg)
 # CloudFlare ChangeNow Button App
 
 Add ChangeNow crypto exchange station, for swapping more than 50+ crypto currencies and tokens, to your website right away!
@@ -54,7 +54,7 @@ All media asset files are located here.
 ## Author's message
 
 Author wishes to give thanks and salute both `ChangeNow` & `CloudFlare` platforms and services, also all amzing opensource libraries used to write & build this code.
-
+![landing-page](./media/landing-page.png)
 
 ### Links
 
@@ -70,7 +70,7 @@ Author wishes to give thanks and salute both `ChangeNow` & `CloudFlare` platform
 
 - <a href="https://changenow.io/" target="_blank">
   <img
-    src="./media/changenow-logo.png"
+    src="./media/logo-on-white.svg"
     alt="ChangeNow Home"
     border="0"
     width="150"
