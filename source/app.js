@@ -47,9 +47,9 @@ const svgLight = `<svg width="500" height="500" viewBox="0 0 500 500" fill="none
     }
     const theme = options.theme;
     let affiliate = '7a525b7dfb9369';
-    if(affiliate){
-      if(typeof affiliate === 'string'){
-        if(affiliate.length > 5){
+    if(options.affiliate){
+      if(typeof options.affiliate === 'string'){
+        if(options.affiliate.length > 5){
           affiliate = options.affiliate;
         }
       }
