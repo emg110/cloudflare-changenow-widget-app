@@ -1,4 +1,4 @@
-![logo-on-white](./media/logo-on-white.svg)
+![logo-on-white](./media/logo-on-white.svg =150x150)
 # CloudFlare ChangeNow Button App
 
 Add ChangeNow crypto exchange station, for swapping more than 50+ crypto currencies and tokens, to your website right away!
