@@ -78,7 +78,7 @@ Author wishes to give thanks and salute both `ChangeNow` & `CloudFlare` platform
     src="./media/logo-on-white.svg"
     alt="ChangeNow Home"
     border="0"
-    width="150"
+    width="64"
     >
 </a>
 
